@@ -1,1 +1,18 @@
+#include <iostream>
+using namespace std;
+void FirstSectence();
+void SecondSectence();
 
+int main(){
+	FirstSectence();
+	FirstSectence();
+	SecondSectence();
+	SecondSectence();
+	return 0;
+}
+void FirstSectence(){
+	cout<<"Three blind mice"<<endl;
+}
+void SecondSectence(){
+	cout<<"See how they run"<<endl;
+}
