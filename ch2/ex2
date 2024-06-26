@@ -1,0 +1,12 @@
+#include <iostream>
+using namespace std;
+
+int main (){
+	int furlongs;
+	int yards;
+	cout<<"Type the distance in furlongs: ";
+	cin>>furlongs;
+	yards= furlongs*220;
+	cout<<"The distance in yards is "<<yards <<"yards";
+	return 0;
+}
