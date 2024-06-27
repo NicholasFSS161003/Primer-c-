@@ -1,0 +1,17 @@
+#include<iostream>
+using namespace std;
+
+void Fahrenheit(int);
+
+int main(){
+	int Celsius;
+	cout<<"Please enter a Celsius value: ";
+	cin>>Celsius;
+	Fahrenheit(Celsius);
+	return 0;
+}
+
+void Fahrenheit(int C){
+	int F = C*3.4;
+	cout<<C<<" degrees Celsius is "<<F<< " degrees Fahrenheit.";
+}
