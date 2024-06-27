@@ -1,0 +1,19 @@
+#include<iostream>
+using namespace std;
+
+void Time(int hours, int min);
+
+int main(){
+	int hours;
+	int min;
+	cout<<"Enter the number of hours: ";
+	cin>>hours;
+	cout<<"Enter the number of min: ";
+	cin>>min;
+	Time(hours,min);
+	return 0;
+}
+
+void Time(int hours, int min){
+	cout << "Time: " << hours << ":" << min;
+}
