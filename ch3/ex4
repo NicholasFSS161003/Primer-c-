@@ -1,0 +1,14 @@
+#include<iostream>
+
+int main(){
+	using namespace std;
+	cout<<"Enter the number of seconds as an integer value: ";
+	long int integer;
+	cin>>integer;
+	int days = integer/86400;
+	int hrs =  integer%86400/3600;
+	int mins = integer%86400%3600/60;
+	int secs = integer%86400%3600%60;
+	cout<<integer<<" seconds = "<<days<<" days, "<< hrs << " hours " << mins <<" minutes "<< secs<<" seconds.";
+	return 0;
+ }
