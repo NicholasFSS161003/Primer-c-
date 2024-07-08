@@ -8,6 +8,7 @@ int main(){
 	cout<<"Petrol in liters: ";
 	double L;
 	cin>>L;
-	cout<<L/100<<" per 100 kilometers.";
+	double e=100/km;
+	cout<<L*e<<" per 100 kilometers.";
 	return 0;
  }
