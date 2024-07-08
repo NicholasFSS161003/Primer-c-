@@ -1,0 +1,24 @@
+#include<iostream>
+#include<math.h>
+const int factor_1=12;
+const double factor_2=0.0254;
+const float factor_3=2.2;
+int main(){
+	using namespace std;
+	cout<<"Enter your height in feet and inches and weight in pounds: "<<endl;
+	cout<<"Feet: ";
+	double feet;
+	cin>>feet;
+	cout<<"Inches: ";
+	double inches;
+	cin>>inches;	
+	cout<<"Weight: ";
+	double weight;
+	cin>>weight;
+	int height_in_inches=inches+feet*factor_1;
+	cout<<"Your height in meters is "<<height_in_inches*factor_2<<endl;
+	cout<<"Your weight in kilograms is "<<weight/factor_3<<endl;
+	double BMI = (weight/factor_3)/(pow(height_in_inches*factor_2,2));
+	cout<<"BMI: "<<BMI;
+	return 0;
+} 
