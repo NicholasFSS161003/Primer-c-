@@ -1,1 +1,12 @@
-
+#include<iostream>
+const double factor = 0.0833333;
+int main(){
+	using namespace std;
+	int height;
+	cout<<"Enter your height in interger inches: "<<"_____\b\b\b\b";
+	cin>>height;
+	int feet=height*factor;
+	double inches=height%feet;
+	cout<<"Your height is "<< feet << " foot and " << inches <<" inches.";
+	return 0;
+} 
