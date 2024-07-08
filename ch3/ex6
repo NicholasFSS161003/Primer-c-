@@ -1,0 +1,13 @@
+#include<iostream>
+
+int main(){
+	using namespace std;
+	cout<<"Km you have driven: ";
+	double km;
+	cin>>km;
+	cout<<"Petrol in liters: ";
+	double L;
+	cin>>L;
+	cout<<L/100<<" per 100 kilometers.";
+	return 0;
+ }
