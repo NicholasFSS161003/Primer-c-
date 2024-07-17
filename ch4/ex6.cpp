@@ -15,9 +15,9 @@ int main() {
 		{"Gummy Bear",6,4}
 	} ;
 	for(int i=0;i<3;i++){
-	cout<<"Name of a candy bar is "<<snack[i].name<<"."<<endl;
-	cout<<"Weight is of the candy bar is "<<snack[i].weight<<"."<<endl;
-	cout<<"Calories of the candy bar is "<<snack[i].calories<<"."<<endl;
+	cout<<"Name of a candy bar " << i+1 << " is "<<snack[i].name<<"."<<endl;
+	cout<<"Weight is of the candy bar " << i+1 << " is "<<snack[i].weight<<"."<<endl;
+	cout<<"Calories of the candy bar " << i+1 << " is "<<snack[i].calories<<"."<<endl;
 	}
 	return 0;
 }
