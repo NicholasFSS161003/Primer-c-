@@ -2,21 +2,22 @@
 Servo Servo;
 
 void setup() {
-Servo.attach(A0);
+Serial.begin(9600);
+Servo.write(0);
+Servo.attach(A1);
 pinMode(2,INPUT);
 pinMode(8,INPUT);
-pinMode(A0,INPUT);
+pinMode(A1,INPUT);
 digitalWrite(2,HIGH);
 digitalWrite(8,HIGH);
-analogWrite(A0,HIGH);
+analogWrite(A1,HIGH);
 }
 
 void loop() {
 if(digitalRead(8)==0){
-Servo.write(180);
+Servo.write(160);
 }
 if(digitalRead(2)==1){
 Servo.write(0);
 }
 }
-
