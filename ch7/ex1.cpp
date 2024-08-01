@@ -2,7 +2,7 @@
 Servo Servo;
 
 void setup() {
-servo.attach(A0);
+Servo.attach(A0);
 pinMode(2,INPUT);
 pinMode(8,INPUT);
 pinMode(A0,INPUT);
