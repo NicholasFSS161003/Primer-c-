@@ -1,23 +1,20 @@
-#include <Servo.h>
-Servo Servo;
+#include <iostream>
+using namespace std;
 
-void setup() {
-Serial.begin(9600);
-Servo.write(0);
-Servo.attach(A1);
-pinMode(2,INPUT);
-pinMode(8,INPUT);
-pinMode(A1,INPUT);
-digitalWrite(2,HIGH);
-digitalWrite(8,HIGH);
-analogWrite(A1,HIGH);
+double harmonic(double pair1, double pair2) {
+    double harmonic_val = 2 * pair1 * pair2 / (pair1 + pair2);
+    return harmonic_val;
 }
 
-void loop() {
-if(digitalRead(8)==0){
-Servo.write(160);
+int main() {
+    double pair1, pair2;
+    while (cout << "Enter pairs of numbers:" && cin >> pair1 >> pair2) {
+    if(pair1 != 0 && pair2 != 0){
+        cout << harmonic(pair1, pair2) << endl;
+    } else {
+    	break;
+	}
 }
-if(digitalRead(2)==1){
-Servo.write(0);
-}
+
+    return 0;
 }
