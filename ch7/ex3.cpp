@@ -31,7 +31,7 @@ box display(char maker[40],float height,float width,float length,float volume){
 	output.width = width;
 	output.length = length;
 	output.volume = volume;
-	cout << "\t" << height << "\t" << width << "\t" << length << "\t" << volume <<endl;
+	cout << "\t" << output.height << "\t" << output.width << "\t" << output.length << "\t" << output.volume <<endl;
 	return output;
 }
 
