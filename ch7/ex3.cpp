@@ -11,12 +11,13 @@ float volume;
 };
 
 box display(char maker[40],float height,float width,float length,float volume);
-void address(box structure);
+void address(box * structure);
 
 int main() {
 //c
 	char word[40] = "Cool";
-	address(display(word,1.75,0.4,1.76,2.67));
+	box val = display(word,1.75,0.4,1.76,2.6);
+	address(&val);
     return 0;
 }
 
@@ -36,6 +37,7 @@ box display(char maker[40],float height,float width,float length,float volume){
 }
 
 //b
-void address(box structure){
-	cout << &structure.maker << "\t" << &structure.height << "\t" << &structure.width << "\t" << &structure.length << "\t" << &structure.volume <<endl;
+void address(box * structure){
+    structure -> volume = structure -> height * structure -> width * structure -> length;
+    cout << structure -> volume;
 }
